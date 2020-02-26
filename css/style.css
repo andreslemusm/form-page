@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/* FONTS AND TEXT */
+
+label,
+.form-label {
+  color: #9aa3ad;
+}
+legend {
+  display: none;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+/* BOX SIZING, BORDERS AND BACKGROUNDS */
+
+p,
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+label {
+  display: block;
+}
+input {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #f1f1f3;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  padding-left: 0.5em;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7166ee;
+  background-color: #f1f0ff;
+  box-shadow: 0 0 1pt 1pt #7166ee;
+}
+
+label {
+  margin: 1em 0;
+}
+section {
+  padding: 1em 0;
+}
+
+/* BUTTON DECORATIONS */
+button {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(110, 146, 255);
+  color: white;
+  border-style: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: rgb(87, 122, 226);
+}
+button:active {
+  outline: none;
+  background-color: royalblue;
+}
+
+/* UTILITY CLASSES */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 400px;
+  height: fit-content;
+  margin: 2%;
+  padding: 2% 5%;
+  background-color: white;
+  color: #38342f;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Roboto";
+  background-color: #f1f1f3;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
