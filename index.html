@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <!-- USER SIGN UP FORM - BEGIN -->
+        <form action="js/script.js" method="post">
+          <h1>Sign Up:</h1>
+          <p>
+            Required fields are followed by
+            <strong><abbr title="required">*</abbr> </strong>.
+          </p>
+          <section>
+            <h2>1. Contact Information</h2>
+
+            <!-- NAME FIELD -->
+            <fieldset>
+              <legend>Name:</legend>
+              <p>
+                <label for="first-name">
+                  First name:
+                  <abbr title="Required" aria-label="required">*</abbr>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="user_first_name"
+                  required
+                />
+              </p>
+              <p>
+                <label for="last-name">
+                  Last name:
+                  <abbr title="Required" aria-label="required">*</abbr>
+                </label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="user_last_name"
+                  required
+                />
+              </p>
+            </fieldset>
+            <!-- EMAIL FIELD -->
+            <p>
+              <label for="mail">
+                Email:
+                <abbr title="Required" aria-label="required">*</abbr>
+              </label>
+              <input type="email" id="mail" name="user_email" required />
+            </p>
+            <!-- PASSWORD FIELD -->
+            <p>
+              <label for="pwd">
+                Password:
+                <abbr title="Required" aria-label="required">* </abbr>
+              </label>
+              <input type="password" name="user_password" id="pwd" required />
+            </p>
+            <!-- CELLPHONE FIELD -->
+            <p>
+              <label for="cel">
+                Phone:
+                <abbr title="Required" aria-label="required">* </abbr>
+              </label>
+              <input
+                type="tel"
+                name="user_phone"
+                id="cel"
+                required
+                minlength="10"
+                maxlength="10"
+              />
+            </p>
+          </section>
+          <section>
+            <h2>2. Shipment Information</h2>
+            <!-- HOME DIRECTION FIELD -->
+            <fieldset>
+              <legend>Address:</legend>
+              <p>
+                <label for="street">
+                  Street Address 1:
+                  <abbr title="Required" aria-label="required">* </abbr>
+                </label>
+                <input type="text" name="user_address" id="street" required />
+              </p>
+              <p>
+                <label for="street_2">Street Address 2:</label>
+                <input type="text" name="user_address_comp" id="street_2" />
+              </p>
+              <!-- STATE FIELD -->
+              <p>
+                <label for="state">
+                  State/Province:
+                  <abbr title="Required" aria-label="required">* </abbr>
+                </label>
+                <input
+                  type="text"
+                  name="user_state"
+                  id="state"
+                  list="states"
+                  required
+                />
+                <datalist id="states">
+                  <option value="Córdoba"></option>
+                  <option value="Antioquia"></option>
+                  <option value="Cundinamarca"></option>
+                  <option value="Atlántico"></option>
+                  <option value="Cesar"></option>
+                  <option value="Bolívar"></option>
+                </datalist>
+              </p>
+              <!-- CITY FIELD -->
+              <p>
+                <label for="city">
+                  City:
+                  <abbr title="Required" aria-label="required">* </abbr>
+                </label>
+                <input
+                  type="text"
+                  name="user_city"
+                  id="city"
+                  list="cities"
+                  required
+                />
+                <datalist id="cities">
+                  <option value="Montería"></option>
+                  <option value="Medellín"></option>
+                  <option value="Bogotá"></option>
+                  <option value="Barranquilla"></option>
+                  <option value="Valledupar"></option>
+                  <option value="Cartagena"></option>
+                </datalist>
+              </p>
+            </fieldset>
+          </section>
+          <section>
+            <button type="submit">Send</button>
+          </section>
+        </form>
+        <!-- USER SIGN UP FORM - END -->
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
