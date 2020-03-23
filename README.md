@@ -1,4 +1,10 @@
-# Form-Page
+# Form Page
 
-Ecommerce subscription page by @aclemusm
+A simple form page: [Visit](https://andresclm.github.io/form-page/index.html) 
+
+# Training
+
+- Semantic HTML5
+- Forms
+- Responsive CSS3
 
